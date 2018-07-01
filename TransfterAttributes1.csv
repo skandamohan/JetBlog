@@ -1,2 +1,41 @@
-# JetBlog
-My code for my jet blog posts
+open System
+type A = { id: String; name: String; age: int}
+type B = 
+  { id: String; name: String; gender: string}
+type C = 
+  { id: String; name: String; height: float}
+let a:A = { id = "123"; name = "ABC"; age = 54}
+let b:B = 
+  { id = "123"; name = "ABC"; gender = "Female"}
+let c:C = 
+  { id = "123"; name = "ABC"; height = 5.9}
+let lookupA = a.id
+let lookupB = b.id
+let lookupC = c.id
+,
+open System
+type A = { id: String; name: String; age: int}
+type B = 
+  { id: String; name: String; gender: string}
+type C = 
+  { id: String; name: String; height: float}
+let a:A = { id = "123"; name = "ABC"; age = 54}
+let b:B = 
+  { id = "123"; name = "ABC"; gender = "Female"}
+let c:C = 
+  { id = "123"; name = "ABC"; height = 5.9}
+let lookupA = a.id
+let lookupB = b.id
+let lookupC = c.id	open System
+type Common = {id: string; name: string}
+type A = {common: Common; age: int}
+type B = {common: Common; gender: string}
+type C = {common: Common; height: float}
+let common:Common = {id = "123"; name = "ABC"}
+let a:A = {common = common; age = 54}
+let b:B = {common = common; gender = "Female"}
+let c:C = {common = common; height = 5.9}
+let lookup x = x.id
+lookup a.common
+lookup b.common
+lookup c.common
